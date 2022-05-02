@@ -1,0 +1,68 @@
+<link rel="stylesheet" media="all" href="./style.css" />
+<div class="wrapper">
+	<header id="header">
+		<h1 id="title">Ozboware Survey Form</h1>
+		<p id="description">Thank you for completing our survey and helping us improve our app</p>
+	</header>
+	<form id="survey-form">
+		<div class="form-block">
+			<label id="name-label" for="name">Name*</label>
+			<input type="text" id="name" placeholder="Enter your name here" required>
+		</div>
+		<div class="form-block">
+			<label id="email-label" for="email">Email*</label>
+			<input type="email" id="email" placeholder="Enter your email here" required>
+		</div>
+		<div class="form-block">
+			<label id="number-label" for="number">Age</label>
+			<input type="number" id="number" min="16" max="140" placeholder="Enter your age here (optional)">
+		</div>
+		<div class="form-block">
+			<p>Choose one of the following options</p>
+			<select id="dropdown" name="select" required>
+				<option value="" disabled selected hidden>Choose one of the following</option>
+				<option value="first">Option one</option>
+				<option value="second">Option two</option>
+				<option value="third">Option three</option>
+				<option value="fourth">Option four</option>
+			</select>
+		</div>
+		<div class="form-block">
+			<p>Now is the time to choose from a radio list</p>
+			<label>
+				<input type="radio" class="radio-in" name="radio-choice" value="first" checked> Option 1
+			</label>
+			<label>
+				<input type="radio" class="radio-in" name="radio-choice" value="second"> Option 2
+			</label>
+			<label>
+				<input type="radio" class="radio-in" name="radio-choice" value="third"> Option 3
+			</label>
+		</div>
+		<div class="form-block">
+			<p>Checkbox Time!!! Select one or more options</p>
+			<label>
+				<input type="checkbox" class="check-in" name="check-choice" value="first"> Option 1
+			</label>
+			<label>
+				<input type="checkbox" class="check-in" name="check-choice" value="second"> Option 2
+			</label>
+			<label>
+				<input type="checkbox" class="check-in" name="check-choice" value="third"> Option 3
+			</label>
+			<label>
+				<input type="checkbox" class="check-in" name="check-choice" value="fourth"> Option 4
+			</label>
+			<label>
+				<input type="checkbox" class="check-in" name="check-choice" value="fifth"> Option 5
+			</label>
+		</div>
+		<div class="form-block">
+			<p>Finally, we end with the textarea for comments</p>
+			<textarea id="comments" class="textarea" name="comment" placeholder="Comments to go here ..."></textarea>
+		</div>
+		<div class="form-block">
+			<button type="submit" id="submit" class="submit-button">Submit</button>
+		</div>
+	</form>
+</div>

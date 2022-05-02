@@ -1,0 +1,83 @@
+body{
+	background:url('https://images.pexels.com/photos/2313070/pexels-photo-2313070.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260') no-repeat;
+	background-size: cover;
+	text-align: center;
+	font-family:arial;
+	color:#fff;
+}
+
+#title{
+	margin-top:10px;
+}
+
+#description{
+	font-size: 18px;
+	font-style: italic;
+	margin-top: -16px
+}
+
+.wrapper {
+	width: 800px;
+	margin: 5rem auto 0 auto;
+}
+
+#survey-form{
+	background-color: rgba(28, 77, 120, 0.5);
+	box-shadow: 0px 0px 18px 5px rgba(255, 255, 255, 0.45);
+	padding: 3rem;
+	text-align: left;
+}
+
+.form-block{
+	margin-bottom: 38px;
+}
+
+#survey-form label, #survey-form p{
+	display:block;
+    font-size: 21px;
+	margin-bottom: 7px;
+}
+
+#survey-form input, #survey-form select, #survey-form button{
+	width:-webkit-fill-available;
+	padding:5px;
+    font-size: 21px;
+	color:#3e3a3a;
+}
+
+.radio-in, .check-in{
+	width: 19px !important;
+	height: 15px;
+	margin-top:19px;
+}
+
+.textarea{
+	width: -webkit-fill-available;
+	min-height: 204px;
+	font-size: 21px;
+	padding: 7px;
+}
+
+.submit-button{
+	background-color:green;
+	color: #fff !important;
+	border: 0;
+	padding: 10px !important;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 845px) {
+	.wrapper {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 460px) {
+	.wrapper {
+		margin: 2rem auto 0 auto;
+	}
+	
+	#survey-form {
+		padding: 1rem;
+	}
+}

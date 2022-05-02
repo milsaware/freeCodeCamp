@@ -1,0 +1,29 @@
+body{
+	background:#dbdbdb;
+	text-align: center;
+	font-family:arial;
+}
+
+main{
+	min-width:320px;
+}
+
+ul{
+	text-align: left;
+	max-width: 600px;
+	margin: auto;
+	line-height: 37px;
+}
+
+#image{
+	display:block;
+	margin: auto;
+	max-width: 100%;
+	padding-bottom: 7px;
+}
+
+#img-div{
+	background: #fff;
+	padding: 7px;
+	font-size: 17px;
+}
