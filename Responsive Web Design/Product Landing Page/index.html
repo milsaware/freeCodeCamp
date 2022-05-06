@@ -1,0 +1,140 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
+<link rel="stylesheet" media="all" href="./style.css" />
+<header id="header">
+	<nav id="nav-bar">
+		<div class="logo">
+			<img id="header-img" src="https://avatars.githubusercontent.com/u/95859352?v=4">
+		</div>
+		<ul>
+			<li>
+				<a class="nav-link" href="#welcome-section">Home</a>
+				<span class="nav-link-divider"> | </span>
+			</li>
+			<li>
+				<a class="nav-link" href="#what_we_do">What we do</a>
+				<span class="nav-link-divider"> | </span>
+			</li>
+			<li>
+				<a class="nav-link" href="#prices">Prices</a>
+			</li>
+		</ul>
+		
+		<label for="menu-modal-check">
+			<span id="burger-menu">&#9776;</span>
+		</label>
+	</nav>
+</header>
+
+<main id="main-doc">
+	<input type="checkbox" id="menu-modal-check">
+	<section id="menu-modal">
+		<label for="menu-modal-check">
+			<div id="background_menu" class="section_background">
+				<div class="modal-content">
+					<ul>
+						<li>
+							<a class="nav-link" href="#welcome-section">Home</a>
+						</li>
+						<li>
+							<a class="nav-link" href="#what_we_do">What we do</a>
+						</li>
+						<li>
+							<a class="nav-link" href="#prices">Prices</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</label>
+	</section>
+
+<div class="vertical-scroll-snap">
+	<section id="welcome-section" class="slide">
+		<div id="background_one" class="section_background">
+			<div class="message-content">
+				<h1>Host your own website</h1>
+				<h2>Get online today and let your voice be heard</h2>
+				<p>Scroll down to see more ...</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="what_we_do" class="slide">
+		<div id="background_two" class="section_background">
+			<div class="section-content">
+				<h2>What we do</h2>
+				<div class="video">
+					<iframe id="video" width="100%" height="100%" src="https://www.youtube.com/embed/7WiJGTPuVeU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div id="video-description">
+					Take a look at this video by freeCodeCamp.org on YouTube.
+					<p>it's a video aimed at teaching Javascript to beginners</p>
+				</div>
+				<div>
+					<form id="form" action="https://www.freecodecamp.com/email-submit">
+						<input type="email" id="email" name="email" placeholder="enter email address" required>
+						<input type="submit" id="submit" value="submit">
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="prices" class="slide">
+		<div id="background_three" class="section_background">
+			<div class="section-content">
+				<h2>Prices</h2>
+				<div class="price-block">
+					<div class="pb-section">
+						<h3>Basic Hosting</h3>
+					</div>
+					<div class="pb-section">
+						<ul>
+							<li>descriptive text</li>
+							<li>descriptive text</li>
+							<li>descriptive text</li>
+							<li>descriptive text</li>
+						</ul>
+					</div>
+					<div class="pb-section">
+						<button class="pb-btn">select</button>
+					</div>
+				</div>
+
+				<div class="price-block">
+					<div class="pb-section">
+						<h3>Advanced Hosting</h3>
+					</div>
+					<div class="pb-section">
+						<ul>
+							<li>descriptive text</li>
+							<li>descriptive text</li>
+							<li>descriptive text</li>
+							<li>descriptive text</li>
+						</ul>
+					</div>
+					<div class="pb-section">
+						<button class="pb-btn">select</button>
+					</div>
+				</div>
+
+				<div class="price-block">
+					<div class="pb-section">
+						<h3>Professional Hosting</h3>
+					</div>
+					<div class="pb-section">
+						<ul>
+							<li>descriptive text</li>
+							<li>descriptive text</li>
+							<li>descriptive text</li>
+							<li>descriptive text</li>
+						</ul>
+					</div>
+					<div class="pb-section">
+						<button class="pb-btn">select</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+</main>
