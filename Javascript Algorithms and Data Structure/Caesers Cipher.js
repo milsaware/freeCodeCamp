@@ -7,11 +7,7 @@ function rot13(str) {
 
 	let decoded = '';
 	for(let i = 0; i < str.length; i++){
-		if(code[str[i]]){
-			decoded += code[str[i]];
-		}else{
-			decoded += str[i];
-		}
+		decoded += (code[str[i]])? code[str[i]] : str[i];
 	}
 
 	return decoded;
