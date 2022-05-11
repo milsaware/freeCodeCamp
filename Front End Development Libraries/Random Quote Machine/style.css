@@ -1,0 +1,127 @@
+body{
+	text-align: left;
+	font-size: 19px;
+	font-family:arial;
+	letter-spacing: 1px;
+	line-height: 27px;
+	margin:0;
+	scroll-behavior: smooth;
+}
+
+a{
+	text-decoration:none;
+}
+
+#quote-mark, #quote-box, #quote-wrapper, #social-wrapper, #button-wrapper{
+	position:absolute;
+}
+
+#author{
+	position:relative;
+}
+
+#quote-box{
+	width:600px;
+	height:350px;
+	top:calc(50vh - 175px);
+	left:calc(50vw - 300px);
+	border:1px solid #000;
+}
+
+#quote-wrapper{
+	width: 200px;
+}
+
+#quote-box{
+	color: #fff;
+}
+
+#text{
+	font-size: 26px;
+}
+
+#quote-mark{
+	left: -27px;
+}
+
+#author{
+	top: -13px;
+	text-align: right;
+}
+
+#tweet-quote{
+	font-size: 35px;
+	background-color: #fff;
+	border-radius: 35px;
+	color: #000;
+	padding: 3px 5px;
+	cursor: pointer;
+	transition:.5s;
+}
+
+#tweet-quote:hover{
+	background-color: #000;
+	color: #fff;
+}
+
+#new-quote{
+	padding: 9px 10px;
+	font-size: 19px;
+	background-color: #0f9f0f;
+	font-weight: 600;
+	border-radius: 10px;
+	color: #fff;
+	text-shadow: 0px 1px 4px #000;
+	cursor: pointer;
+}
+
+#new-quote:active{
+	color:#dbdbdb;
+}
+
+@media only screen and (max-width: 650px) {
+	#quote-box{
+		width:400px;
+		height:250px;
+		top:calc(50vh - 125px);
+		left:calc(50vw - 200px);
+	}
+
+	#text{
+		font-size: 14px;
+	}
+
+	#quote-wrapper{
+		width: 111px;
+	}
+
+	#author{
+		font-size: 12px;
+	}
+
+	#tweet-quote{
+		font-size: 23px;
+	}
+}
+
+@media only screen and (max-width: 430px) {
+	#quote-box{
+		width:350px;
+		height:200px;
+		top:calc(50vh - 100px);
+		left:calc(50vw - 175px);
+	}
+	#social-wrapper{
+		top: 2px;
+		left: calc(100% - 30px);
+	}
+	#tweet-quote{
+		font-size:19px;
+	}
+	#quote-wrapper{
+		width: 124px;
+	}
+	#new-quote{
+		font-size:15px;
+	}
+}
