@@ -102,7 +102,5 @@ for(let i = 0; i < keyboard.length; i++){
 				}
 			}
 		}
-		
-		
 	});
 }
