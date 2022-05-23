@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>25 + 5 clock</title>
+	<meta name="description" content="Javascript Calculator"/>
+	<meta name="author" content="ozboware">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="./assets/css/style.css"/>
+</head>
+
+<body>
+	<div id="btn-wrapper">
+		<div class="btn-block">
+			<span id="break-label" class="btn-label">Break Length</span>
+			<i id="break-decrement" class="fa fa-arrow-down btn"></i>
+			<span id="break-length">5</span>
+			<i id="break-increment" class="fa fa-arrow-up btn"></i>
+		</div>
+		<div class="btn-block">
+			<span id="session-label" class="btn-label">Session Length</span>
+			<i id="session-decrement" class="fa fa-arrow-down btn"></i>
+			<span id="session-length">25</span>
+			<i id="session-increment" class="fa fa-arrow-up btn"></i>
+		</div>
+	</div>
+
+	<div id="timer-wrapper">
+		<span id="timer-label">Session</span>
+		<span id="time-left">25:00</span>
+	</div>
+
+	<div id="player-wrapper">
+		<i id="start_stop" class="fa fa-play player-btn"></i>
+		<i id="reset" class="fa fa-refresh player-btn"></i>
+	</div>
+	
+	<audio id="beep" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav"></audio>
+
+	<script src="./assets/js/app.js"></script>
+</body>
