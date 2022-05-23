@@ -21,6 +21,33 @@ function timerConvert(ms) {
 	return (seconds == 60)? (mins + 1) + ':00' : mins + ':' + ((seconds < 10)? '0' : '') + seconds;
 }
 
+function countDown(){
+	if(timerRunning == 1){
+		if(timerLabel.innerText == 'Session'){
+			sessionTimer = sessionTimer - 1000;
+		}else{
+			breakTimer = breakTimer - 1000;
+		}
+		let timeLeftIn = (timerLabel.innerText == 'Session')? sessionTimer : breakTimer;
+		if(timeLeftIn == 0){
+			audio.play();
+		}
+		if(timeLeftIn < 0){
+			if(timerLabel.innerText == 'Session'){
+				sessionTimer = parseInt(sessionLength.innerText) * 60 * 1000;
+			}else{
+				breakTimer = parseInt(breakLength.innerText) * 60 * 1000;
+			}
+			timerLabel.innerText = (timerLabel.innerText == 'Session')? 'Break' : 'Session';
+			timeLeft.innerText = (timerLabel.innerText == 'Session')? timerConvert(sessionTimer) : timerConvert(breakTimer);
+		}else{
+			timeLeft.innerText = timerConvert(timeLeftIn);
+		}
+	}else{
+		clearInterval(interval);
+	}
+}
+
 sessionIncrement.addEventListener('click', function(){
 	if(sessionLength.innerText != '60' && timerRunning == 0){
 		sessionLength.innerText = parseInt(sessionLength.innerText) + 1;
@@ -60,33 +87,6 @@ breakDecrement.addEventListener('click', function(){
 		}
 	}
 });
-
-function countDown(){
-	if(timerRunning == 1){
-		if(timerLabel.innerText == 'Session'){
-			sessionTimer = sessionTimer - 1000;
-		}else{
-			breakTimer = breakTimer - 1000;
-		}
-		let timeLeftIn = (timerLabel.innerText == 'Session')? sessionTimer : breakTimer;
-		if(timeLeftIn == 0){
-			audio.play();
-		}
-		if(timeLeftIn < 0){
-			if(timerLabel.innerText == 'Session'){
-				sessionTimer = parseInt(sessionLength.innerText) * 60 * 1000;
-			}else{
-				breakTimer = parseInt(breakLength.innerText) * 60 * 1000;
-			}
-			timerLabel.innerText = (timerLabel.innerText == 'Session')? 'Break' : 'Session';
-			timeLeft.innerText = (timerLabel.innerText == 'Session')? timerConvert(sessionTimer) : timerConvert(breakTimer);
-		}else{
-			timeLeft.innerText = timerConvert(timeLeftIn);
-		}
-	}else{
-		clearInterval(interval);
-	}
-}
 
 startStop.addEventListener('click', function(){
 	if(this.className == 'fa fa-play player-btn'){
