@@ -71,7 +71,7 @@ for(i = 0; i < pads.length; i++){
 	drumPad.append(clip);
 	drumPad.onclick = function(){
 		clip.play();
-		display.innerText = pads[j].id.replace('-', ' ');
+		display.innerText = pads[j].id.replace(/-/g, ' ');
 	}
 	document.addEventListener('keydown', function(event) {
 		if(event.code == 'Key' + pads[j].key) {
