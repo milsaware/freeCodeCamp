@@ -1,0 +1,75 @@
+body{
+	text-align: left;
+	font-size: 19px;
+	font-family:arial;
+	letter-spacing: 1px;
+	line-height: 27px;
+	margin:0;
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(11,23,112,1) 45%, rgba(19,93,108,1) 100%);
+	user-select: none;
+}
+
+a{
+	text-decoration:none;
+}
+
+audio{
+	display:none;
+}
+
+#drum-machine{
+	position: relative;
+	top: calc(50vh - 191px);
+	width: 374px;
+	height: 383px;
+	margin: auto;
+}
+
+#display{
+	border: 1px solid;
+	height: 37px;
+	background: #dbdbdb;
+	color: #276a27;
+	text-align: center;
+	padding-top: 9px;
+	font-size: 32px;
+	font-weight: bold;
+}
+
+#Q {grid-area:Q;}
+#W {grid-area:W;}
+#E {grid-area:E;}
+#A {grid-area:A;}
+#S {grid-area:S;}
+#D {grid-area:D;}
+#Z {grid-area:Z;}
+#X {grid-area:X;}
+#C {grid-area:C;}
+
+#drum-pad-wrapper{
+	display: grid;
+	grid-template-areas:
+		'Q W E'
+		'A S D'
+		'Z X C';
+	height:300px;
+	width:375px;
+	margin-top:17px;
+}
+
+.drum-pad{
+	border:1px solid;
+	padding: 28px 0;
+	text-align: center;
+	margin: 7px;
+	border-radius: 15px;
+	background: #fff;
+	cursor: pointer;
+	transition:.4s;
+}
+
+.drum-pad-text{
+	font-size: 28px;
+	font-weight:bold;
+}
