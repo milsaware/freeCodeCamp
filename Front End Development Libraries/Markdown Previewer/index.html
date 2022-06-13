@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Markdown Previewer</title>
+	<meta name="description" content="Markdown Previewer"/>
+	<meta name="author" content="ozboware">
+	<link rel="stylesheet" href="./assets/css/style.css"/>
+</head>
+
+<body>
+	<div id="ta-block">
+		<div class="block-head">
+			Editor
+		</div>
+		<textarea id="editor">
+# H1 ## H2
+# H1 element
+## H2 element
+### H3 element
+inline code `<div></div>` goes here inline code `<div></div>` goes here here inline code `<div></div>` goes here
+
+codeblock
+```
+// multi-line code:
+function anotherExample(firstLine, lastLine){
+    if (firstLine == '```' && lastLine == '```') {
+      return multiLineCode;
+    }
+}
+```
+
+**bold**
+_italic_
+**_bold italic_**
+~~strikethrough~~
+
+[link to ozboware](https://ozboware.co.uk)
+> Some blockQuote text!
+
+**lists**
+- list item 1.
+- list item 1.2.
+- list item 1.3.
+- list item 1.4.
+
+**image**
+![ozboware logo](https://profile-assets.showwcase.com/1639787918604.jpg)
+		</textarea>
+	</div>
+	<div id="pr-block">
+		<div class="block-head">
+			Preview
+		</div>
+		<div id="preview">
+			
+		</div>
+	</div>
+	<script src="./assets/js/markdown.min.js"></script>
+	<script src="./assets/js/app.js"></script>
+</body>

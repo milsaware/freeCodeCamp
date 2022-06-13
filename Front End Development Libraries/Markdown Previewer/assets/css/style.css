@@ -1,0 +1,68 @@
+body{
+	text-align: left;
+	font-size: 19px;
+	font-family:arial;
+	letter-spacing: 1px;
+	line-height: 27px;
+	margin:0;
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(11,23,112,1) 45%, rgba(19,93,108,1) 100%);
+	user-select: none;
+}
+
+textarea{
+	width:calc(100% - 6px);
+	max-width:calc(100% - 6px);
+	min-width:calc(100% - 6px);
+	height:275px;
+	font-size: 19px;
+	line-height: 30px;
+	outline: none;
+}
+
+.block-head{
+	padding: 5px;
+	font-weight: bold;
+	background-color: #7fffd4;
+}
+
+#ta-block{
+	width: 500px;
+	min-height: 275px;
+	margin: 30px auto;
+	margin-bottom: 10px;
+}
+
+#pr-block{
+	width: 700px;
+	min-height: 275px;
+	margin: auto;
+	background-color:#fff;
+}
+
+#preview{
+	padding: 15px;
+}
+
+code{
+	background-color: #e5e5e5;
+	padding: 2px;
+}
+
+pre{
+	position: relative;
+	background-color: #e5e5e5;
+	margin-top: -12px;
+	padding: 0 18px;
+	padding-bottom: 28px;
+}
+
+blockquote{
+	background-color: #2b5454;
+	color: #fff;
+	padding: 25px;
+	font-size: 23px;
+	border-radius: 12px;
+	font-weight: bold;
+	letter-spacing: 3px;
+}
