@@ -1,0 +1,159 @@
+body{
+	text-align: left;
+	font-size: 19px;
+	font-family:arial;
+	letter-spacing: 1px;
+	line-height: 27px;
+	margin:0;
+	user-select: none;
+}
+
+#container{
+	height:100vh;
+}
+
+#outerShell{
+	position:relative;
+	border: 20px solid;
+	width: 450px;
+	height: 450px;
+	border-radius: 100%;
+	margin:auto;
+	top:calc(50% - 250px);
+}
+
+.pad{
+	position: absolute;
+	width: 211px;
+	height: 216px;
+	transition: .25s;
+}
+
+#padOne{
+	background-color: blue;
+	left: 240px;
+	border-top-right-radius: 100%;
+}
+
+#padTwo{
+	background-color: red;
+	left: 240px;
+	top: 235px;
+	border-bottom-right-radius: 100%;
+}
+
+#padThree{
+	background-color: gold;
+	top: 235px;
+	border-bottom-left-radius: 100%;
+}
+
+#padFour{
+	background-color: green;
+	border-top-left-radius: 100%;
+}
+
+#verticalLine{
+	position: relative;
+	border: 15px solid;
+	width: 0px;
+	height: 422px;
+	left: calc(50% - 15px);
+}
+
+#horizontalLine{
+	position: relative;
+    border: 15px solid;
+	width: 422px;
+	height: 0;
+	left: calc(50% - 225px);
+	bottom: calc(50% + 15px);
+}
+
+#innerShell{
+	position: relative;
+	width: 250px;
+	height: 250px;
+	bottom: calc(50% + 157px);
+	left: calc(50% - 126px);
+	background-color: #000;
+	border-radius: 100%;
+}
+
+#btnBar{
+	position: absolute;
+	left: calc(50% - 69px);
+	top: 161px;
+}
+
+.btn{
+	position:relative;
+	margin: 10px;
+	font-size: 30px;
+	border-radius:100%;
+	border: 0;
+	box-shadow: 3px 3px grey;
+	cursor:pointer;
+}
+
+.btn:active{
+	box-shadow: none;
+	top: 3px;
+	left: 3px;
+}
+
+#strictWrapper{
+	position: absolute;
+	left: 73px;
+	color: #fff;
+	top: 34px;
+}
+
+#strictLight{
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+}
+
+.strictLightGreen{
+	background-color: green;
+}
+
+.strictLightRed{
+	background-color: red;
+}
+
+#strictBtn{
+	position: absolute;
+	left: 25px;
+	bottom: 3px;
+	height: 10px;
+	width: 78px;
+	cursor: pointer;
+}
+
+#display{
+	position: relative;
+	width: 100px;
+	height: 57px;
+	background-color: #000;
+	border: 1px solid white;
+	top: 90px;
+	left: 72px;
+	text-align: center;
+}
+
+#displaySpan{
+	position: relative;
+	top: 15px;
+	font-size:62px;
+	color: red;
+}
+
+#startButton{
+	padding: 6px 8px 4px 15px;
+}
+
+#resetButton{
+	padding: 1px 11px 5px 11px;
+}
