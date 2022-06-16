@@ -1,0 +1,121 @@
+body{
+	text-align: left;
+	font-size: 19px;
+	font-family:arial;
+	letter-spacing: 1px;
+	line-height: 27px;
+	margin:0;
+	user-select: none;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	min-height:100vh;
+}
+
+#gameArea{
+	width: 400px;
+	height: 425px;
+	background-color: burlywood;
+	border-radius: 17px;
+	box-shadow: 7px 7px 17px rgb(0 0 0 / 50%);
+}
+
+.scoreSection{
+	display: inline-block;
+	width: calc(50% - 10px);
+	padding: 5px;
+	text-align: center;
+}
+
+.score{
+	display:block;
+	font-size:34px;
+	position: relative;
+	top: 1px;
+}
+
+#gameBoard{
+	border: 1px solid;
+	width: 350px;
+	height: 323px;
+	position: relative;
+	left: 25px;
+	top: 9px;
+	background-color: #000;
+}
+
+#gameBoardContent{
+	font-family: cursive;
+	color: #fff;
+	transition:.5s;
+}
+
+#menuSpan{
+	font-size: 32px;
+	padding: 10px;
+	text-align: center;
+	line-height: 49px;
+	letter-spacing: 1px;
+	position: relative;
+	top: 34px;
+}
+
+.menuOption{
+	display: inline-block;
+	text-align: center;
+	width: 50%;
+	position: relative;
+	font-size: 94px;
+	top: 86px;
+	cursor: pointer;
+}
+
+#one {grid-area:one;}
+#two {grid-area:two;}
+#three {grid-area:three;}
+#four {grid-area:four;}
+#five {grid-area:five;}
+#six {grid-area:six;}
+#seven {grid-area:seven;}
+#eight {grid-area:eight;}
+#nine {grid-area:nine;}
+
+#gameWrapper{
+	display: grid;
+	grid-template-areas:
+		'one two three'
+		'four five six'
+		'seven eight nine';
+	height:323px;
+}
+
+#gameWrapper > div{
+	border:4px solid;
+	padding: 15px 0;
+	text-align: center;
+	font-size: 28px;
+	cursor: pointer;
+	transition:.4s;
+}
+
+.boardMark{
+	position: absolute;
+	font-size: 95px;
+	margin-left: -38px;
+	margin-top: 14px;
+}
+
+#notification{
+	position: absolute;
+	bottom: 136px;
+	left: calc(50% - 94px);
+	color: white;
+	background-color: green;
+	padding: 10px 25px;
+	font-size: 32px;
+	border: 4px solid red;
+	transition: .75s;
+}
