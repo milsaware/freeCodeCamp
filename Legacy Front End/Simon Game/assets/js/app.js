@@ -49,7 +49,6 @@ for(let i = 0; i < pads.length; i++){
 					gameReset();
 				}else{
 					currentGuess++;
-					console.log(currentGuess)
 					if(currentGuess >= currentPattern.length){
 						currentGuess = 0;
 						ready = 0;
@@ -196,13 +195,11 @@ function showPattern(){
 		setTimeout(function(){
 			for(let j = 0; j < padsEl.length; j++){
 				if(padsEl[j].getAttribute('data-id') == currentPattern[i]){
-					console.log('yep')
 					padsEl[j].style.cssText = pads[j].bright;
 					padsEl[j].querySelector('.clip').pause();
 					padsEl[j].querySelector('.clip').currentTime = 0;
 					padsEl[j].querySelector('.clip').play();
 					setTimeout(function(){
-						console.log('rem')
 						padsEl[j].removeAttribute('style');
 					}, blinkTimer - 100);
 				}
