@@ -106,6 +106,16 @@ function fadeIn(el, time){
 	}, time);
 }
 
+function addMark(e, p){
+	turn = (turn == 0)? 1 : 0;
+	let span = document.createElement('span');
+	span.className = 'boardMark';
+	span.innerText = p;
+	e.append(span);
+	count++;
+	checkWin();
+}
+
 function buildMenu(){
 	let menuSpan = document.createElement('div');
 	menuSpan.id = 'menuSpan';
@@ -152,13 +162,7 @@ function buildBoard(){
 		block.id = blocks[i];
 		block.addEventListener('click', function(){
 			if(gameStart == 1 && turn == 0 && this.innerText == ''){
-				turn = 1;
-				let span = document.createElement('span');
-				span.className = 'boardMark';
-				span.innerText = player;
-				this.append(span);
-				count++;
-				checkWin();
+				addMark(this, player);
 				computerChoice();
 			}
 		});
@@ -173,13 +177,8 @@ function computerChoice(){
 	if(gameStart == 1){
 		if(block.innerText == ''){
 			setTimeout(function(){
-				turn = 0;
-				let span = document.createElement('span');
-				span.className = 'boardMark';
-				span.innerText = (player == 'X')? 'O' : 'X';
-				block.append(span);
-				count++;
-				checkWin();
+				let mark = (player == 'X')? 'O' : 'X';
+				addMark(block, mark);
 			}, 1000);
 		}else{
 			computerChoice();
