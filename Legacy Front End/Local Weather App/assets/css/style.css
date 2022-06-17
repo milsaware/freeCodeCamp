@@ -1,0 +1,39 @@
+body{
+	text-align: left;
+	font-size: 19px;
+	font-family:arial;
+	letter-spacing: 1px;
+	line-height: 27px;
+	margin:0;
+	user-select: none;
+}
+
+#container{
+    text-align:center;
+}
+
+#locCity{
+	font-size: 31px;
+	margin-right: 15px;
+}
+
+#locCountry{
+	font-size: 28px;
+	font-weight: bold;
+}
+
+#temperature{
+	font-size: 35px;
+	margin-right: 8px;
+}
+
+#desc{
+	font-size: 32px;
+}
+
+#tempCF{
+	font-size: 27px;
+	cursor: pointer;
+	color: blue;
+	font-weight: bold;
+}
